@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { UserregComponent } from './userreg/userreg.component';
 import { UserlogComponent } from './userlog/userlog.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ViewprofileComponent } from './viewprofile/viewprofile.component';
 const myrouter:Routes=[
   {
     path:"",
@@ -25,6 +27,10 @@ const myrouter:Routes=[
   {
     path:"userlog",
     component:UserlogComponent
+  },
+  {
+    path:"viewprofile",
+    component:ViewprofileComponent
   }
 ]
 
@@ -34,13 +40,15 @@ const myrouter:Routes=[
     AdminpageComponent,
     AdminhomeComponent,
     UserregComponent,
-    UserlogComponent
+    UserlogComponent,
+    ViewprofileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(myrouter)
+    RouterModule.forRoot(myrouter),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
