@@ -11,6 +11,7 @@ import { UserregComponent } from './userreg/userreg.component';
 import { UserlogComponent } from './userlog/userlog.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ViewprofileComponent } from './viewprofile/viewprofile.component';
+import { AdminnavComponent } from './adminnav/adminnav.component';
 const myrouter:Routes=[
   {
     path:"",
@@ -41,7 +42,8 @@ const myrouter:Routes=[
     AdminhomeComponent,
     UserregComponent,
     UserlogComponent,
-    ViewprofileComponent
+    ViewprofileComponent,
+    AdminnavComponent
   ],
   imports: [
     BrowserModule,
