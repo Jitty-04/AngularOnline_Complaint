@@ -8,6 +8,7 @@ import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { UserregComponent } from './userreg/userreg.component';
+import { UserlogComponent } from './userlog/userlog.component';
 const myrouter:Routes=[
   {
     path:"",
@@ -20,6 +21,10 @@ const myrouter:Routes=[
   {
     path:"userreg",
     component:UserregComponent
+  },
+  {
+    path:"userlog",
+    component:UserlogComponent
   }
 ]
 
@@ -28,7 +33,8 @@ const myrouter:Routes=[
     AppComponent,
     AdminpageComponent,
     AdminhomeComponent,
-    UserregComponent
+    UserregComponent,
+    UserlogComponent
   ],
   imports: [
     BrowserModule,
