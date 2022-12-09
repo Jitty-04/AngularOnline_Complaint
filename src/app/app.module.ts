@@ -7,6 +7,7 @@ import { AdminpageComponent } from './adminpage/adminpage.component';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { UserregComponent } from './userreg/userreg.component';
 const myrouter:Routes=[
   {
     path:"",
@@ -15,6 +16,10 @@ const myrouter:Routes=[
   {
     path:"adminhome",
     component:AdminhomeComponent
+  },
+  {
+    path:"userreg",
+    component:UserregComponent
   }
 ]
 
@@ -22,7 +27,8 @@ const myrouter:Routes=[
   declarations: [
     AppComponent,
     AdminpageComponent,
-    AdminhomeComponent
+    AdminhomeComponent,
+    UserregComponent
   ],
   imports: [
     BrowserModule,
