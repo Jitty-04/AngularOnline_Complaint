@@ -7,15 +7,16 @@ import { ApiService } from '../api.service';
   styleUrls: ['./userreg.component.css']
 })
 export class UserregComponent {
+  constructor(private api:ApiService){
+
+  }
   name=""
   address=""
   phno=""
   email=""
   password=""
   confirmpassword=""
-  constructor(private api:ApiService){
-
-  }
+ 
 readValues=()=>
 {
   let data:any={
