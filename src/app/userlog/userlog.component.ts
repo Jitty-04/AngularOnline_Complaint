@@ -32,7 +32,7 @@ export class UserlogComponent {
           this.searchUsers=response;
           let userid=response.userid
           console.log(userid)
-          localStorage.setItem("userInfo",userid)
+          localStorage.setItem("userInfo",this.searchUsers.userid)
           this.route.navigate(["viewprofile"])
 
         }
