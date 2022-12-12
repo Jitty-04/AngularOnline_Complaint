@@ -14,6 +14,7 @@ import { ViewprofileComponent } from './viewprofile/viewprofile.component';
 import { AdminnavComponent } from './adminnav/adminnav.component';
 import { UsernavComponent } from './usernav/usernav.component';
 import { AddComplaintComponent } from './add-complaint/add-complaint.component';
+import { UserviewComponent } from './userview/userview.component';
 const myrouter:Routes=[
   {
     path:"",
@@ -39,7 +40,10 @@ const myrouter:Routes=[
     path:"addcomplaint",
     component:AddComplaintComponent
   },
-  
+  {
+    path:"userview",
+    component:UserviewComponent
+  }
 ]
 
 @NgModule({
@@ -52,7 +56,8 @@ const myrouter:Routes=[
     ViewprofileComponent,
     AdminnavComponent,
     UsernavComponent,
-    AddComplaintComponent
+    AddComplaintComponent,
+    UserviewComponent
   ],
   imports: [
     BrowserModule,
